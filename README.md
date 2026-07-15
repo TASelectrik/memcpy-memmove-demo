@@ -23,13 +23,17 @@ a ring buffer wraparound — where there's no MMU and no safety net.
 
 ## Build
 
+```bash
 gcc -g -O0 -Wall -o memcpy_naive memcpy_naive.c
 gcc -g -O0 -Wall -o memmove_fix memmove_fix.c
+```
 
 ## Run
 
+```bash
 ./memcpy_naive
 ./memmove_fix
+```
 
 ## Example: shift "ABCDEFGHIJ" right by 2 (src=&buf[0], dst=&buf[2], n=7)
 
